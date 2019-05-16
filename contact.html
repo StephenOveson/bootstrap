@@ -4,20 +4,32 @@
         <title>Stephen Oveson's Portfolio</title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     </head>
-    <body>
-        <header>
-            <nav>
-                    <h1><a href="index.html">Stephen Oveson</a></h1>
-                    <a href="contact.html">Contact</a>
-                    <a href="portfolio.html">Portfolio</a>
-                    <a href="index.html">About</a>
-            </nav>
-        </header>
-        <section>
-            <div>
-                <h1>Contact Me</h1>
-                <hr>
-            </div>
+    <body class="bg-info">
+            <header class="navbar navbar-expand-lg navbar-light bg-light">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light w-75 mx-auto">
+                    <div class="bg-info">
+                    <a class="navbar-brand text-white mx-auto" href="#">Stephen Oveson</a>
+                </div>
+                    <div class="collapse navbar-collapse d-flex justify-content-end">
+                      <ul class="navbar-nav d-flex justify-content-end">
+                        <li class="nav-item active">
+                          <a class="nav-link" href="index.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="portfolio.html">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </nav>
+            </header>
+            <section class="text-justify bg-light mx-auto w-75 mt-3 p-1">
+                <div>
+                    <h1 class="pl-4 pt-2">Contact</h1>
+                    <hr>
+                </div>
             <div>
                 <form action="mailto:stephen.oveson@gmail.com" method="post" enctype="text/plain">
                 <p>Name:</p>
@@ -25,14 +37,14 @@
                 <p>Email:</p>
                 <input type="text" name="email"><br>
                 <p>Message:</p>
-                <input type="textarea" name="comment" size="150"><br>
-                <input type="submit" value="send">
+                <input type="textarea" name="comment" size="75"><br>
+                <input type="submit" value="send" class="btn btn-info">
                 </form>
                 
             </div>
         </section>
-        <footer>
-            <pre>Copyright ©</pre>
+        <footer class="d-flex justify-content-center navbar navbar-expand-lg navbar-light bg-light fixed-bottom">
+                <pre>Copyright ©</pre>
         </footer>
     </body>
 </html>
